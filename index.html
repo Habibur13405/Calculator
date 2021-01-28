@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="my-cal">
+    
+    <div class="num-display">
+      <input type="text" id="display" maxlength="12"/>
+    </div>
+    <div class="line"></div>
+    <div class="all-btn">
+      <input type="button" class="btn ex" value="AC" onclick="allClear()"/>
+      <input type="button" class="btn" value="⏪" onclick="deleteNumber()"/>
+      <input type="button" class="btn"
+        value="%" onclick="insertNumber('%')"/>
+      <input type="button" class="btn" value="÷" onclick="insertNumber('/')"/>
+    </div>
+    <div class="all-btn">
+      <input type="button" class="btn" value="7" onclick="insertNumber(7)"/>
+      <input type="button" class="btn" value="8" onclick="insertNumber(8)"/>
+      <input type="button" class="btn" value="9" onclick="insertNumber(9)"/>
+      <input type="button" class="btn" value="×" onclick="insertNumber('*')"/>
+    </div>
+    
+    <div class="all-btn">
+      <input type="button" class="btn" value="4" onclick="insertNumber(4)"/>
+      <input type="button" class="btn" value="5" onclick="insertNumber(5)" />
+      <input type="button" class="btn" value="6" onclick="insertNumber(6)"/>
+      <input type="button" class="btn" value="-" onclick="insertNumber('-')"/>
+    </div>
+    
+    <div class="all-btn">
+       <input type="button" class="btn" value="1" onclick="insertNumber(1)"/>
+       <input type="button" class="btn" value="2" onclick="insertNumber(2)"/>
+       <input type="button" class="btn" value="3" onclick="insertNumber(3)"/>
+       <input type="button" class="btn" value="+" onclick="insertNumber('+')"/>
+     </div>
+     <div class="all-btn">
+       <input type="button" class="btn" value="00" onclick="insertNumber('00')"/>
+       <input type="button" class="btn" value="0" onclick="insertNumber('0')"/>
+       <input type="button" class="btn" value="." onclick="insertNumber('.')" />
+       <input type="button" class="btn" value="=" onclick="calculate()" />
+     </div>
+     <div class="my-text">
+     <p>Devloper...Habibur Rahman</p>
+     </div>
+  </div>
+  
+  <!--script-->
+  <script src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+</body>
+</html>

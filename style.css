@@ -1,0 +1,133 @@
+ *{
+   padding: 0;
+   margin: 0;
+ }
+ body{
+   font-family: 'Patua One', cursive;
+ }
+ .my-cal{
+   background: url(https://i.imgur.com/9WrMSQ5.jpg) no-repeat center;
+   background-size: cover;
+   margin: 30px auto 0;
+   height: 485px;
+   width: 300px;
+   box-shadow: 0 3px 3px 5px #969696;
+   border-radius: 10px;
+   overflow: hidden;
+ }
+ .num-display{ 
+   text-align: center;
+   box-shadow: 0 3px 3px 3px #00000087;
+ }
+ input[type=text]{
+   font-family: 'Patua One', cursive;
+   border-radius: 10px 10px 0 0;
+   width: 95%;
+   height: 80px;
+   font-size: 43px;
+   background: url(https://i.imgur.com/4AYv6vn.png) no-repeat center;
+   background-size: cover;
+   text-align: right;
+   color: #FFFFFF;
+   padding: 10px;
+   border: none;
+   outline: none;
+   font-weight: bold;
+ }
+ 
+ .all-btn{
+   margin: 10px 3px 0px;
+   text-align: center;
+ }
+ 
+ .btn{
+   font-family: 'Patua One', cursive;
+   margin: 0 2px;
+   height: 60px;
+   width: 65px;
+   border: 1px solid black;
+   outline: none;
+   font-size: 30px;
+   font-weight: bold;
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 0 0 0 2px #969696;
+   transition: .3s;
+ }
+ .btn:hover{
+   border: 2px solid #FFFFFF;
+   box-shadow: 0 0 0 3px #FFFFFF36;
+   color: #FFFFFF;
+   background: #000000;
+ }
+ 
+  /* line*/
+ .line{
+   margin: 0px auto;
+   height: 7px;
+   width: 4%;
+   background: linear-gradient(135deg, #FFFFFF, #BFFF00, #02FFDB); 
+   animation: line 5s ease-in infinite;
+   border-radius: 2px;
+ }
+ 
+ @keyframes line{
+   0%{
+     transform: scaleX(0);
+     opacity: 0;
+   }
+   10%{
+     transform: scaleX(3);
+     opacity: .5;
+   }
+   
+   20%{
+     transform: scaleX(5);
+     opacity: .7;
+   }
+   30%{
+     transform: scaleX(7)
+     opacity: 1;
+   }
+   40%{
+     transform: scaleX(9);
+     opacity: 1;
+   }
+   
+   50%{
+     transform: scaleX(12);
+     opacity: 1;
+   }
+   60%{
+     transform: scaleX(15);
+     opacity: 1;
+   }
+   70% {
+     transform: scaleX(18);
+     opacity: 7;
+   }
+   
+   80% {
+     transform: scaleX(21);
+     opacity: 1;
+   }
+   
+   90%{
+     transform: scaleX(24);
+     opacity: 1;
+   }
+   
+   100%{
+     transform: scaleX(25);
+     opacity: 1;
+   }
+ }
+ .my-text{
+   margin: 5px 0;
+   text-align: center;
+   font-weight: bolder;
+   opacity: .5;
+ }
+ .ex{
+   color: red;
+ }
